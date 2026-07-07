@@ -130,7 +130,7 @@ window.PORTFOLIO = {
     {
       slug: "Formen", type: "Trio", medium: "leinwand", size: "30 × 30 cm",
       title: { de: "Formen", it: "Forme", fr: "Formes", en: "Forms" },
-      pieces: ["Rechteck", "Kreis", "La-Linea"]
+      pieces: ["Rechteck", "La-Linea", "Kreis"]
     },
     {
       slug: "Flash", type: "Trio", medium: "leinwand", size: "30 × 24 cm",
