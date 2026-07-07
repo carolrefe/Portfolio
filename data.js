@@ -184,7 +184,7 @@ exhibitions: [
       pieces: ["Anemone", "Rose", "Krokus", "Krokus-2", "Rose-2", "Rose-3"]
     },
     {
-      slug: "Menschen", type: "Duo", medium: "collageLeinwand", size: "",
+      slug: "Menschen", type: "Duo",
       title: { de: "Menschen", it: "Persone", fr: "Personnes", en: "People" },
       pieces: ["Zusammen", "Allein"]
     },
@@ -199,8 +199,8 @@ exhibitions: [
   pieces: {
     /* Perspektive — slug number = displayed number; image is the original file */
     "Perspektive-1": { title: { de: "Perspektive 1", it: "Prospettiva 1", fr: "Perspective 1", en: "Perspective 1" }, image: "Perspektive 3", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive", price: "260 CHF" },
-    "Perspektive-2": { title: { de: "Perspektive 2", it: "Prospettiva 2", fr: "Perspective 2", en: "Perspective 2" }, image: "Perspektive 4", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive"},
-    "Perspektive-3": { title: { de: "Perspektive 3", it: "Prospettiva 3", fr: "Perspective 3", en: "Perspective 3" }, image: "Perspektive 5", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive"},
+    "Perspektive-2": { title: { de: "Perspektive 2", it: "Prospettiva 2", fr: "Perspective 2", en: "Perspective 2" }, image: "Perspektive 4", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive", price: "Verkauft"},
+    "Perspektive-3": { title: { de: "Perspektive 3", it: "Prospettiva 3", fr: "Perspective 3", en: "Perspective 3" }, image: "Perspektive 5", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive", price: "Verkauft"},
     "Perspektive-4": { title: { de: "Perspektive 4", it: "Prospettiva 4", fr: "Perspective 4", en: "Perspective 4" }, image: "Perspektive 1", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive" },
     "Perspektive-5": { title: { de: "Perspektive 5", it: "Prospettiva 5", fr: "Perspective 5", en: "Perspective 5" }, image: "Perspektive 2", medium: "leinwand", size: "40 × 40 cm", collection: "Perspektive" },
 
