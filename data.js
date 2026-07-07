@@ -202,6 +202,9 @@ window.PORTFOLIO = {
     "Anemone": { title: { de: "Anemone", it: "Anemone", fr: "Anémone", en: "Anemone" }, image: "Anemone", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
     "Rose": { title: { de: "Rose", it: "Rosa", fr: "Rose", en: "Rose" }, image: "Rose", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
     "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
+    "Krokus-2": { title: { de: "Krokus 2", it: "Croco 2", fr: "Crocus 2", en: "Crocus 2" }, image: "Krokus2", medium: "karton", size: "30 × 30 cm", collection: "Blumen" },
+    "Blume-2": { title: { de: "Blume 2", it: "Fiore 2", fr: "Fleur 2", en: "Flower 2" }, image: "Rose2", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
+    "Blume-3": { title: { de: "Blume 3", it: "Fiore 3", fr: "Fleur 3", en: "Flower 3" }, image: "Rose3", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
 
     /* Chromatische Trilogie (Trio) */
     "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "24 × 30 cm", collection: "Chromatische-Trilogie" },
