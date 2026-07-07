@@ -33,6 +33,9 @@ window.PORTFOLIO = {
   },
 
   exhibitions: [
+    { year: "November 2024", title: "Thomson Gallery", place: "" },
+    { year: "October 2024", title: "Artboxy", place: "Paris" },
+    { year: "August 2024", title: "Swissartexpo Artboxy Project", place: "8001 Zurich" },
     { year: "2019", title: "Perspektive", place: "Galerie Glashütte, Zumikon" },
     { year: "2018", title: "Équilibre", place: "Galerie Glashütte, Zumikon" },
     { year: "2017", title: "Anflug von Süden", place: "Galerie Glashütte, Zumikon" },
@@ -196,9 +199,9 @@ window.PORTFOLIO = {
     "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "100 × 70 cm", collection: "Blumen" },
 
     /* Chromatische Trilogie (Trio) */
-    "Le-Bleu": { title: { de: "Blau", it: "Il Blu", fr: "Le Bleu", en: "The Blue" }, image: "Le Bleu", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" },
-    "Le-Noir": { title: { de: "Schwarz", it: "Il Nero", fr: "Le Noir", en: "The Black" }, image: "Le Noir", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" },
-    "Le-Rouge": { title: { de: "Rot", it: "Il Rosso", fr: "Le Rouge", en: "The Red" }, image: "Le Rouge", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" }
+    "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" },
+    "Le-Noir": { title: { de: "Schwarz", it: "Nero", fr: "Noir", en: "Black" }, image: "Le Noir", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" },
+    "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" }
   },
 
   /* Works shown under "Einzelwerke" (none — all grouped). */
