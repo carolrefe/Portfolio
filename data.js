@@ -108,7 +108,7 @@ window.PORTFOLIO = {
   /* ---------- Collections (Perspektive first) ---------- */
   collections: [
     {
-      slug: "Perspektive", type: "", medium: "", size: "40 × 40 cm",
+      slug: "Perspektive", type: "Quintett", medium: "",
       title: { de: "Perspektive", it: "Prospettiva", fr: "Perspective", en: "Perspective" },
       pieces: ["Perspektive-1", "Perspektive-2", "Perspektive-3", "Perspektive-4", "Perspektive-5"]
     },
@@ -118,37 +118,37 @@ window.PORTFOLIO = {
       pieces: ["Himmel", "Erde", "Desert", "Scacco-Matto"]
     },
     {
-      slug: "Welle", type: "Trio", medium: "leinwand", size: "40 × 40 cm",
+      slug: "Welle", type: "Trio",
       title: { de: "Welle", it: "Onda", fr: "Vague", en: "Wave" },
       pieces: ["Gruene-Welle", "Rote-Welle", "Blaue-Welle"]
     },
     {
-      slug: "Duo", type: "Duo", medium: "leinwand", size: "40 × 40 cm",
+      slug: "Duo", type: "Duo",
       title: { de: "Duo", it: "Duo", fr: "Duo", en: "Duo" },
       pieces: ["Licht", "Dunkelheit"]
     },
     {
-      slug: "Formen", type: "Trio", medium: "leinwand", size: "30 × 30 cm",
+      slug: "Formen", type: "Trio",
       title: { de: "Formen", it: "Forme", fr: "Formes", en: "Forms" },
       pieces: ["Rechteck", "La-Linea", "Kreis"]
     },
     {
-      slug: "Flash", type: "Trio", medium: "leinwand", size: "30 × 24 cm",
+      slug: "Flash", type: "Trio",
       title: { de: "Flash", it: "Flash", fr: "Flash", en: "Flash" },
       pieces: ["Flash-1", "Flash-2", "Flash-3"]
     },
     {
-      slug: "Pastell", type: "Trio", medium: "leinwand", size: "15 × 15 cm",
+      slug: "Pastell", type: "Trio",
       title: { de: "Pastell", it: "Pastello", fr: "Pastel", en: "Pastel" },
       pieces: ["Pastell-1", "Pastell-2", "Pastell-3"]
     },
     {
-      slug: "Blumen", type: "Trio", medium: "karton", size: "",
+      slug: "Blumen", type: "Trio",
       title: { de: "Blumen", it: "Fiori", fr: "Fleurs", en: "Flowers" },
       pieces: ["Anemone", "Rose", "Krokus"]
     },
     {
-      slug: "Chromatische-Trilogie", type: "Trio", medium: "leinwand", size: "",
+      slug: "Chromatische-Trilogie", type: "Trio",
       title: { de: "Chromatische Trilogie", it: "Trilogia Cromatica", fr: "Trilogie Chromatique", en: "Chromatic Trilogy" },
       pieces: ["Le-Bleu", "Le-Noir", "Le-Rouge"]
     }
