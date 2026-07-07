@@ -70,7 +70,7 @@
         var a = el("a", { class: "card reveal", href: pieceUrl(slug) });
         var frame = el("div", { class: "frame" });
         frame.appendChild(artImage(p.image, pieceTitle(slug)));
-        if (p.sold) frame.appendChild(el("span", { class: "badge" }, L().soldLabel));
+        // if (p.sold) frame.appendChild(el("span", { class: "badge" }, L().soldLabel));
         a.appendChild(frame);
         var info = el("div", { class: "info" });
         info.appendChild(el("div", { class: "t" }, pieceTitle(slug)));
@@ -246,7 +246,7 @@
             big.addEventListener("click", function () { openLightbox(big.src, pieceTitle(slug)); });
         }
         media.appendChild(big);
-        if (p.sold) media.appendChild(el("span", { class: "badge badge-lg" }, L().soldLabel));
+        // if (p.sold) media.appendChild(el("span", { class: "badge badge-lg" }, L().soldLabel));
         grid.appendChild(media);
 
         var info = el("div", { class: "detail-info" });
