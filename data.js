@@ -181,7 +181,7 @@ exhibitions: [
     {
       slug: "Blumen", type: "", medium: "karton", size: "",
       title: { de: "Blumen", it: "Fiori", fr: "Fleurs", en: "Flowers" },
-      pieces: ["Anemone", "Rose", "Krokus", "Krokus-2", "Blume-2", "Blume-3"]
+      pieces: ["Anemone", "Rose", "Krokus", "Krokus-2", "Rose-2", "Rose-3"]
     },
     {
       slug: "Menschen", type: "Duo", medium: "collageLeinwand", size: "",
@@ -239,9 +239,9 @@ exhibitions: [
     "Anemone": { title: { de: "Anemone", it: "Anemone", fr: "Anémone", en: "Anemone" }, image: "Anemone", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
     "Rose": { title: { de: "Rose", it: "Rosa", fr: "Rose", en: "Rose" }, image: "Rose", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
     "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
-    "Krokus-2": { title: { de: "Krokus 2", it: "Croco 2", fr: "Crocus 2", en: "Crocus 2" }, image: "Krokus2", medium: "karton", size: "30 × 30 cm", collection: "Blumen" },
-    "Blume-2": { title: { de: "Blume 2", it: "Fiore 2", fr: "Fleur 2", en: "Flower 2" }, image: "Rose2", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
-    "Blume-3": { title: { de: "Blume 3", it: "Fiore 3", fr: "Fleur 3", en: "Flower 3" }, image: "Rose3", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
+    "Krokus-2": { title: { de: "Krokus 2", it: "Croco 2", fr: "Crocus 2", en: "Crocus 2" }, image: "Krokus 2", medium: "karton", size: "30 × 30 cm", collection: "Blumen" },
+    "Rose-2": { title: { de: "Rose 2", it: "Rosa 2", fr: "Rose 2", en: "Rose 2" }, image: "Rose 2", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
+    "Rose-3": { title: { de: "Rose 3", it: "Rosa 3", fr: "Rose 3", en: "Rose 3" }, image: "Rose 3", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
 
     /* Menschen (Duo) */
     "Zusammen": { title: { de: "Zusammen", it: "Insieme", fr: "Ensemble", en: "Together" }, image: "Zusammen", medium: "collageLeinwand", size: "60 × 50 cm", collection: "Menschen" },
