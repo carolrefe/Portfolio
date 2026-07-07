@@ -116,7 +116,7 @@
         c2.appendChild(el("h4", null, L().exhibitions));
         var ul = el("ul", { class: "exhib" });
         P.exhibitions.forEach(function (ex) {
-            ul.appendChild(el("li", null, "<b>" + ex.year + "</b> " + ex.title + " — " + ex.place));
+            ul.appendChild(el("li", null, "<b>" + ex.year + "</b> " + tt(ex.title) + " — " + tt(ex.place)));
         });
         c2.appendChild(ul);
 
