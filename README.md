@@ -11,27 +11,26 @@ Live site: `https://carolrefe.github.io/Portfolio/`
 
 - Home: `/Portfolio/`
 - A single work: `/Portfolio/Dunkelheit`, `/Portfolio/Anemone`, `/Portfolio/Perspektive-4`, …
-- A collection: `/Portfolio/Vier-Welten`, `/Portfolio/Welle`, `/Portfolio/Duo`,
-  `/Portfolio/Formen`, `/Portfolio/Flash`, `/Portfolio/Pastell`,
-  `/Portfolio/Fluchtpunkte`, `/Portfolio/Florale-Kompositionen`,
-  `/Portfolio/Chromatische-Trilogie`
+- A collection: `/Portfolio/Perspektive`, `/Portfolio/Welten`, `/Portfolio/Welle`,
+  `/Portfolio/Duo`, `/Portfolio/Formen`, `/Portfolio/Flash`, `/Portfolio/Pastell`,
+  `/Portfolio/Blumen`, `/Portfolio/Chromatische-Trilogie`
 
-## Collections
+## Collections (Perspektive shown first)
 
 | Collection | Type | Pieces |
 |---|---|---|
-| Vier Welten | Quartett | Himmel, Erde, Wüste, Schachmatt |
+| Perspektive | — | Perspektive 1–5 (2 & 3 sold) |
+| Welten | Quartett | Himmel, Erde, Wüste, Schachmatt |
 | Welle | Trio | Grüne / Rote / Blaue Welle |
 | Duo | Duo | Licht, Dunkelheit |
 | Formen | Trio | Rechteck, Kreis, Linie |
 | Flash | Trio | Flash 1–3 |
 | Pastell | Trio | Pastell 1–3 |
-| Fluchtpunkte | Trio | Perspektive 1–3 (+ 4 & 5, verkauft) |
-| Florale Kompositionen | Trio | Anemone, Rose, Krokus |
-| Chromatische Trilogie | Trio | Le Bleu, Le Noir, Le Rouge |
+| Blumen | Trio | Anemone, Rose, Krokus |
+| Chromatische Trilogie | Trio | Blau, Schwarz, Rot |
 
-**Verkauft (Sold):** Perspektive 4 & 5 appear in the "Verkauft" section on the home
-page and are also shown (badged) inside the Fluchtpunkte collection.
+**Sold:** sold works stay inside their collection and simply show a "Verkauft"
+badge on the top-left of the image (there is no separate sold section).
 
 ## Editing content
 

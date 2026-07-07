@@ -87,7 +87,6 @@
         var right = el("div", { class: "topright" });
         var nav = el("nav", { class: "topnav" });
         nav.appendChild(el("a", { href: homeUrl() + "#collections" }, L().nav_collections));
-        nav.appendChild(el("a", { href: homeUrl() + "#sold" }, L().soldSection));
         nav.appendChild(el("a", { href: homeUrl() + "#contact" }, L().nav_contact));
         right.appendChild(nav);
 
@@ -184,7 +183,7 @@
         P.collections.forEach(function (c) {
             var head = el("div", { class: "section-head" });
             var left = el("div");
-            left.appendChild(el("h2", null, tt(c.title) + '<span class="tag">' + typeLabel(c.type) + "</span>"));
+            left.appendChild(el("h2", null, tt(c.title) + (c.type ? '<span class="tag">' + typeLabel(c.type) + "</span>" : "")));
             head.appendChild(left);
             head.appendChild(el("a", { class: "collection-link", href: collectionUrl(c.slug) }, L().viewCollection));
             cw.appendChild(head);
@@ -199,22 +198,6 @@
         });
         colSection.appendChild(cw);
         root.appendChild(colSection);
-
-        // Verkauft
-        var sold = soldSlugs();
-        if (sold.length) {
-            var sSection = el("section", { class: "section", id: "sold" });
-            var sw = el("div", { class: "wrap" });
-            var sh = el("div", { class: "section-head" });
-            sh.appendChild(el("h2", null, L().soldSection));
-            sh.appendChild(el("span", { class: "meta-inline" }, sold.length + " " + L().worksCount));
-            sw.appendChild(sh);
-            var sgrid = el("div", { class: "grid auto" });
-            sold.forEach(function (s) { sgrid.appendChild(card(s)); });
-            sw.appendChild(sgrid);
-            sSection.appendChild(sw);
-            root.appendChild(sSection);
-        }
 
         // Einzelwerke (only if any)
         if (P.individualsOrder.length) {
@@ -266,7 +249,11 @@
         grid.appendChild(media);
 
         var info = el("div", { class: "detail-info" });
-        var kicker = p.collection ? tt(collectionBySlug(p.collection).title) + " · " + typeLabel(collectionBySlug(p.collection).type) : L().single;
+        var kicker = L().single;
+        if (p.collection) {
+            var kcol = collectionBySlug(p.collection);
+            kicker = tt(kcol.title) + (kcol.type ? " · " + typeLabel(kcol.type) : "");
+        }
         info.appendChild(el("p", { class: "kicker" }, kicker));
         info.appendChild(el("h1", null, pieceTitle(slug)));
 
@@ -274,7 +261,8 @@
         if (p.medium) spec.appendChild(el("li", null, "<span>" + L().technik + "</span><span>" + mediumText(p.medium) + "</span>"));
         if (p.size) spec.appendChild(el("li", null, "<span>" + L().format + "</span><span>" + p.size + "</span>"));
         if (p.collection) spec.appendChild(el("li", null, '<span>' + L().kollektion + '</span><span><a class="collection-link" href="' + collectionUrl(p.collection) + '">' + tt(collectionBySlug(p.collection).title) + "</a></span>"));
-        spec.appendChild(el("li", null, "<span>" + L().preis + "</span><span>" + (p.sold ? L().soldLabel : L().priceOnRequest) + "</span>"));
+        var priceVal = p.sold ? L().soldLabel : (p.price ? p.price : L().priceOnRequest);
+        spec.appendChild(el("li", null, "<span>" + L().preis + "</span><span>" + priceVal + "</span>"));
         info.appendChild(spec);
 
         var order = orderedSlugs();
@@ -335,7 +323,7 @@
         w.appendChild(crumbs);
 
         var head = el("div", { class: "section-head" });
-        head.appendChild(el("h2", null, tt(c.title) + '<span class="tag">' + typeLabel(c.type) + "</span>"));
+        head.appendChild(el("h2", null, tt(c.title) + (c.type ? '<span class="tag">' + typeLabel(c.type) + "</span>" : "")));
         var metaText = [mediumText(c.medium), c.size].filter(Boolean).join(" · ");
         if (metaText) head.appendChild(el("span", { class: "meta-inline" }, metaText));
         w.appendChild(head);
