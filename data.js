@@ -12,8 +12,6 @@ window.PORTFOLIO = {
     "Abstrakte Acrylmalerei und Mischtechnik — ein Spiel aus Farbe, Fluss und Struktur, in dem feste Form und fließender Raum aufeinandertreffen.",
   contact: {
     name: "Carol Ferrari",
-    address: "Büelstrasse 40b, 8132 Egg",
-    phone: "+41 79 505 60 27",
     email: "carol.refe@bluewin.ch"
   },
   exhibitions: [
