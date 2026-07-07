@@ -144,7 +144,7 @@ exhibitions: [
   /* ---------- Collections (Perspektive first) ---------- */
   collections: [
     {
-      slug: "Perspektive", type: "Quintett", medium: "",
+      slug: "Perspektive", type: "Quintet", medium: "",
       title: { de: "Perspektive", it: "Prospettiva", fr: "Perspective", en: "Perspective" },
       pieces: ["Perspektive-1", "Perspektive-2", "Perspektive-3", "Perspektive-4", "Perspektive-5"]
     },
