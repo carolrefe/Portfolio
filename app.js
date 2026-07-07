@@ -123,6 +123,7 @@
         var c3 = el("div", { class: "col" });
         c3.appendChild(el("h4", null, L().atelier));
         c3.appendChild(el("p", null, tt(P.tagline)));
+        c3.appendChild(el("p", null, tt(P.education)));
         c3.appendChild(el("p", null, "© " + new Date().getFullYear() + " " + P.artist));
 
         w.appendChild(c1); w.appendChild(c2); w.appendChild(c3);
