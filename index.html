@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #fbf9f6; /* Elegant gallery cream */
+            color: #1e2522;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        /* Left Side: Stays pinned/sticky on desktop */
+        .left-panel {
+            width: 40%;
+            padding: 3rem;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .left-panel h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .metadata {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        /* Right Side: Scrolls normally */
+        .right-panel {
+            width: 60%;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .right-panel img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+        /* Mobile Optimization: Stacks vertically when scanned on a phone */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left-panel {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding: 2rem 1.5rem 1rem 1.5rem;
+            }
+            .right-panel {
+                width: 100%;
+                padding: 1rem 1.5rem 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Column: Info Box -->
+        <div class="left-panel">
+            <h1>Echoes of Form</h1>
+            <p class="metadata">2026 &bull; Acrylic and PLA &bull; 80 x 60 cm</p>
+            <p class="description">
+                This piece explores the intersection of physical structure and fluid modern spaces. 
+                The textured surfaces are built to capture shifting light throughout the day, 
+                changing the viewer's experience depending on their angle in the room.
+            </p>
+        </div>
+
+        <!-- Right Column: Images -->
+        <div class="right-panel">
+            <!-- Replace these placeholder URLs with your actual hosted image links -->
+            <img src="https://via.placeholder.com/800x600" alt="Main Artwork View">
+            <img src="https://via.placeholder.com/800x600" alt="Detail Shot 1">
+            <img src="https://via.placeholder.com/800x600" alt="Detail Shot 2">
+        </div>
+    </div>
+
+</body>
+</html>
