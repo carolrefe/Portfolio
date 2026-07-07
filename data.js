@@ -33,11 +33,11 @@ window.PORTFOLIO = {
   },
 
   education: {
-  de: "1979 - 1984 Schule für Kunst und Handwerk, Textildesignerin, Lugano",
-  it: "1979 - 1984 Scuola d’Arte e Mestieri, designer tessile, Lugano",
-  fr: "1979 - 1984 École des arts et métiers, designer textile, Lugano",
-  en: "1979 - 1984 School of Arts and Crafts, Textile Designer, Lugano"
-},
+    de: "1979–1984 Kunstgewerbeschule, Textildesignerin, Lugano",
+    it: "1979–1984 Scuola d’arte applicata, designer tessile, Lugano",
+    fr: "1979–1984 École des arts appliqués, designer textile, Lugano",
+    en: "1979–1984 School of Applied Arts, Textile Designer, Lugano"
+  },
 
 
 exhibitions: [
