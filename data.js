@@ -184,6 +184,11 @@ exhibitions: [
       pieces: ["Anemone", "Rose", "Krokus", "Krokus-2", "Blume-2", "Blume-3"]
     },
     {
+      slug: "Menschen", type: "Duo", medium: "collageLeinwand", size: "",
+      title: { de: "Menschen", it: "Persone", fr: "Personnes", en: "People" },
+      pieces: ["Zusammen", "Allein"]
+    },
+    {
       slug: "Chromatische-Trilogie", type: "Trio",
       title: { de: "Chromatische Trilogie", it: "Trilogia Cromatica", fr: "Trilogie Chromatique", en: "Chromatic Trilogy" },
       pieces: ["Le-Bleu", "Le-Noir", "Le-Rouge"]
@@ -237,6 +242,10 @@ exhibitions: [
     "Krokus-2": { title: { de: "Krokus 2", it: "Croco 2", fr: "Crocus 2", en: "Crocus 2" }, image: "Krokus2", medium: "karton", size: "30 × 30 cm", collection: "Blumen" },
     "Blume-2": { title: { de: "Blume 2", it: "Fiore 2", fr: "Fleur 2", en: "Flower 2" }, image: "Rose2", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
     "Blume-3": { title: { de: "Blume 3", it: "Fiore 3", fr: "Fleur 3", en: "Flower 3" }, image: "Rose3", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
+
+    /* Menschen (Duo) */
+    "Zusammen": { title: { de: "Zusammen", it: "Insieme", fr: "Ensemble", en: "Together" }, image: "Zusammen", medium: "collageLeinwand", size: "60 × 50 cm", collection: "Menschen" },
+    "Allein": { title: { de: "Allein", it: "Solo", fr: "Seul", en: "Alone" }, image: "Alleine", medium: "collageLeinwand", size: "50 × 50 cm", collection: "Menschen" },
 
     /* Chromatische Trilogie (Trio) */
     "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "24 × 30 cm", collection: "Chromatische-Trilogie" },
