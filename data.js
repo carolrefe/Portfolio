@@ -99,10 +99,14 @@ window.PORTFOLIO = {
   },
 
   /* ---------- Collection type labels ---------- */
-  types: {
-    Trio: { de: "Trio", it: "Trio", fr: "Trio", en: "Trio" },
+    types: {
+    Solo: { de: "Solo", it: "Solo", fr: "Solo", en: "Solo" },
     Duo: { de: "Duo", it: "Duo", fr: "Duo", en: "Duo" },
-    Quartet: { de: "Quartett", it: "Quartetto", fr: "Quatuor", en: "Quartet" }
+    Trio: { de: "Trio", it: "Trio", fr: "Trio", en: "Trio" },
+    Quartet: { de: "Quartett", it: "Quartetto", fr: "Quatuor", en: "Quartet" },
+    Quintet: { de: "Quintett", it: "Quintetto", fr: "Quintette", en: "Quintet" },
+    Sextet: { de: "Sextett", it: "Sestetto", fr: "Sextuor", en: "Sextet" },
+    Septet: { de: "Septett", it: "Settimino", fr: "Septuor", en: "Septet" }
   },
 
   /* ---------- Collections (Perspektive first) ---------- */
@@ -143,9 +147,9 @@ window.PORTFOLIO = {
       pieces: ["Pastell-1", "Pastell-2", "Pastell-3"]
     },
     {
-      slug: "Blumen", type: "Trio",
+      slug: "Blumen", type: "", medium: "karton", size: "",
       title: { de: "Blumen", it: "Fiori", fr: "Fleurs", en: "Flowers" },
-      pieces: ["Anemone", "Rose", "Krokus"]
+      pieces: ["Anemone", "Rose", "Krokus", "Krokus-2", "Rose-3", "Rose-2"]
     },
     {
       slug: "Chromatische-Trilogie", type: "Trio",
