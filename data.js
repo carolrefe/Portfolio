@@ -180,8 +180,9 @@ window.PORTFOLIO = {
 
     /* Formen (Trio) */
     "Rechteck": { title: { de: "Rechteck", it: "Rettangolo", fr: "Rectangle", en: "Rectangle" }, image: "Il Quadrato", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
-    "Kreis": { title: { de: "Kreis", it: "Cerchio", fr: "Cercle", en: "Circle" }, image: "Il Tondo", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
     "La-Linea": { title: { de: "Linie", it: "Linea", fr: "Ligne", en: "Line" }, image: "La Linea", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
+    "Kreis": { title: { de: "Kreis", it: "Cerchio", fr: "Cercle", en: "Circle" }, image: "Il Tondo", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
+    
 
     /* Flash (Trio) */
     "Flash-1": { title: { de: "Flash 1", it: "Flash 1", fr: "Flash 1", en: "Flash 1" }, image: "Flash 1", medium: "leinwand", size: "30 × 24 cm", collection: "Flash" },
