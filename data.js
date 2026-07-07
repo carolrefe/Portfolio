@@ -32,6 +32,14 @@ window.PORTFOLIO = {
     email: "carol.refe@bluewin.ch"
   },
 
+  education: {
+  de: "Schule für Kunst und Handwerk, Textildesignerin, Lugano",
+  it: "Scuola d’Arte e Mestieri, designer tessile, Lugano",
+  fr: "École des arts et métiers, designer textile, Lugano",
+  en: "School of Arts and Crafts, Textile Designer, Lugano"
+},
+
+
 exhibitions: [
   {
     year: "November 2024",
