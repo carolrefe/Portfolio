@@ -167,7 +167,7 @@ window.PORTFOLIO = {
     "Himmel": { title: { de: "Himmel", it: "Cielo", fr: "Ciel", en: "Sky" }, image: "Himmel", medium: "leinwand", size: "60 × 60 cm", collection: "Welten" },
     "Erde": { title: { de: "Erde", it: "Terra", fr: "Terre", en: "Earth" }, image: "Erde", medium: "leinwand", size: "60 × 60 cm", collection: "Welten" },
     "Desert": { title: { de: "Wüste", it: "Deserto", fr: "Désert", en: "Desert" }, image: "Desert", medium: "leinwand", size: "40 × 40 cm", collection: "Welten" },
-    "Scacco-Matto": { title: { de: "Schachmatt", it: "Scacco Matto", fr: "Échec et mat", en: "Checkmate" }, image: "Scacco Matto", medium: "leinwand", size: "", collection: "Welten" },
+    "Scacco-Matto": { title: { de: "Schachmatt", it: "Scacco Matto", fr: "Échec et mat", en: "Checkmate" }, image: "Scacco Matto", medium: "leinwand", size: "70 × 70 cm", collection: "Welten" },
 
     /* Welle (Trio) */
     "Gruene-Welle": { title: { de: "Grüne Welle", it: "Onda Verde", fr: "Vague Verte", en: "Green Wave" }, image: "Grüne Welle", medium: "leinwand", size: "40 × 40 cm", collection: "Welle" },
@@ -200,9 +200,9 @@ window.PORTFOLIO = {
     "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "100 × 70 cm", collection: "Blumen" },
 
     /* Chromatische Trilogie (Trio) */
-    "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" },
-    "Le-Noir": { title: { de: "Schwarz", it: "Nero", fr: "Noir", en: "Black" }, image: "Le Noir", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" },
-    "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" }
+    "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "30 × 24 cm", collection: "Chromatische-Trilogie" },
+    "Le-Noir": { title: { de: "Schwarz", it: "Nero", fr: "Noir", en: "Black" }, image: "Le Noir", medium: "leinwand", size: "30 × 24 cm", collection: "Chromatische-Trilogie" },
+    "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "30 × 24 cm", collection: "Chromatische-Trilogie" }
   },
 
   /* Works shown under "Einzelwerke" (none — all grouped). */
