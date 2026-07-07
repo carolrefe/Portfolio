@@ -1,19 +1,36 @@
 /*
- * Portfolio data — single source of truth.
- * Edit titles, mediums, sizes, or add descriptions here.
- * "image" is the base filename inside the Images/ folder (without extension);
- * the app tries several extensions automatically.
- * Set image to null for works that don't have a photo yet.
+ * Portfolio data — single source of truth (multilingual: de / it / fr / en).
+ *
+ * - Titles are objects: { de, it, fr, en }.
+ * - "medium" is a KEY into MEDIA below (so it translates automatically); "" = none.
+ * - "image" is the base filename inside Images/ (without extension); the app tries
+ *   several extensions automatically. Use null for works without a photo.
+ * - "sold: true" marks a work as sold (shown under "Verkauft" and badged).
  */
 window.PORTFOLIO = {
+  languages: ["de", "it", "fr", "en"],
+  defaultLang: "de",
+
   artist: "Carol Ferrari",
-  tagline: "Acryl & Mischtechnik",
-  intro:
-    "Abstrakte Acrylmalerei und Mischtechnik — ein Spiel aus Farbe, Fluss und Struktur, in dem feste Form und fließender Raum aufeinandertreffen.",
+
+  tagline: {
+    de: "Acryl & Mischtechnik",
+    it: "Acrilico e tecnica mista",
+    fr: "Acrylique et technique mixte",
+    en: "Acrylic & mixed media"
+  },
+  intro: {
+    de: "Abstrakte Acrylmalerei und Mischtechnik — ein Spiel aus Farbe, Fluss und Struktur, in dem feste Form und fließender Raum aufeinandertreffen.",
+    it: "Pittura acrilica astratta e tecnica mista — un gioco di colore, flusso e struttura, dove la forma solida incontra lo spazio fluido.",
+    fr: "Peinture acrylique abstraite et technique mixte — un jeu de couleur, de flux et de structure, où la forme solide rencontre l'espace fluide.",
+    en: "Abstract acrylic painting and mixed media — a play of colour, flow and texture, where solid form meets fluid space."
+  },
+
   contact: {
     name: "Carol Ferrari",
     email: "carol.refe@bluewin.ch"
   },
+
   exhibitions: [
     { year: "2019", title: "Perspektive", place: "Galerie Glashütte, Zumikon" },
     { year: "2018", title: "Équilibre", place: "Galerie Glashütte, Zumikon" },
@@ -22,96 +39,167 @@ window.PORTFOLIO = {
     { year: "2014", title: "Klang-Art", place: "Galerie Glashütte, Zumikon" }
   ],
 
-  /* Collections (Trios / Duo). "pieces" lists piece slugs in order. */
+  /* ---------- UI strings ---------- */
+  ui: {
+    de: {
+      langName: "DE",
+      nav_collections: "Kollektionen", nav_works: "Werke", nav_contact: "Kontakt",
+      collections: "Kollektionen", individuals: "Einzelwerke", soldSection: "Verkauft",
+      viewCollection: "Kollektion ansehen →",
+      technik: "Technik", format: "Format", kollektion: "Kollektion", preis: "Preis",
+      priceOnRequest: "auf Anfrage", soldLabel: "Verkauft",
+      back: "Zurück zum Portfolio", alsoIn: "Auch in", imageComing: "Bild folgt",
+      exhibitions: "Ausstellungen", atelier: "Atelier", portfolio: "Portfolio",
+      worksCount: "Werke", single: "Einzelwerk"
+    },
+    it: {
+      langName: "IT",
+      nav_collections: "Collezioni", nav_works: "Opere", nav_contact: "Contatto",
+      collections: "Collezioni", individuals: "Opere singole", soldSection: "Venduto",
+      viewCollection: "Vedi la collezione →",
+      technik: "Tecnica", format: "Formato", kollektion: "Collezione", preis: "Prezzo",
+      priceOnRequest: "su richiesta", soldLabel: "Venduto",
+      back: "Torna al portfolio", alsoIn: "Anche in", imageComing: "Immagine in arrivo",
+      exhibitions: "Mostre", atelier: "Atelier", portfolio: "Portfolio",
+      worksCount: "opere", single: "Opera singola"
+    },
+    fr: {
+      langName: "FR",
+      nav_collections: "Collections", nav_works: "Œuvres", nav_contact: "Contact",
+      collections: "Collections", individuals: "Œuvres individuelles", soldSection: "Vendu",
+      viewCollection: "Voir la collection →",
+      technik: "Technique", format: "Format", kollektion: "Collection", preis: "Prix",
+      priceOnRequest: "sur demande", soldLabel: "Vendu",
+      back: "Retour au portfolio", alsoIn: "Aussi dans", imageComing: "Image à venir",
+      exhibitions: "Expositions", atelier: "Atelier", portfolio: "Portfolio",
+      worksCount: "œuvres", single: "Œuvre individuelle"
+    },
+    en: {
+      langName: "EN",
+      nav_collections: "Collections", nav_works: "Works", nav_contact: "Contact",
+      collections: "Collections", individuals: "Individual works", soldSection: "Sold",
+      viewCollection: "View collection →",
+      technik: "Technique", format: "Format", kollektion: "Collection", preis: "Price",
+      priceOnRequest: "on request", soldLabel: "Sold",
+      back: "Back to portfolio", alsoIn: "Also in", imageComing: "Image coming soon",
+      exhibitions: "Exhibitions", atelier: "Studio", portfolio: "Portfolio",
+      worksCount: "works", single: "Individual work"
+    }
+  },
+
+  /* ---------- Media (translated) ---------- */
+  media: {
+    leinwand: { de: "Acryl auf Leinwand", it: "Acrilico su tela", fr: "Acrylique sur toile", en: "Acrylic on canvas" },
+    karton: { de: "Acryl auf Karton", it: "Acrilico su cartone", fr: "Acrylique sur carton", en: "Acrylic on cardboard" },
+    collageLeinwand: { de: "Collage · Acryl auf Leinwand", it: "Collage · Acrilico su tela", fr: "Collage · Acrylique sur toile", en: "Collage · Acrylic on canvas" }
+  },
+
+  /* ---------- Collection type labels ---------- */
+  types: {
+    Trio: { de: "Trio", it: "Trio", fr: "Trio", en: "Trio" },
+    Duo: { de: "Duo", it: "Duo", fr: "Duo", en: "Duo" },
+    Quartet: { de: "Quartett", it: "Quartetto", fr: "Quatuor", en: "Quartet" }
+  },
+
+  /* ---------- Collections ---------- */
   collections: [
     {
-      slug: "Welle",
-      title: "Welle",
-      type: "Trio",
-      medium: "Acryl auf Leinwand",
-      size: "40 × 40 cm",
+      slug: "Vier-Welten", type: "Quartet", medium: "", size: "",
+      title: { de: "Vier Welten", it: "Quattro Mondi", fr: "Quatre Mondes", en: "Four Worlds" },
+      pieces: ["Himmel", "Erde", "Desert", "Scacco-Matto"]
+    },
+    {
+      slug: "Welle", type: "Trio", medium: "leinwand", size: "40 × 40 cm",
+      title: { de: "Welle", it: "Onda", fr: "Vague", en: "Wave" },
       pieces: ["Gruene-Welle", "Rote-Welle", "Blaue-Welle"]
     },
     {
-      slug: "Duo",
-      title: "Duo",
-      type: "Duo",
-      medium: "Acryl auf Leinwand",
-      size: "40 × 40 cm",
+      slug: "Duo", type: "Duo", medium: "leinwand", size: "40 × 40 cm",
+      title: { de: "Duo", it: "Duo", fr: "Duo", en: "Duo" },
       pieces: ["Licht", "Dunkelheit"]
     },
     {
-      slug: "Formen",
-      title: "Formen",
-      type: "Trio",
-      medium: "Acryl auf Leinwand",
-      size: "30 × 30 cm",
-      pieces: ["Rechteck", "Quadrat", "Kreis"]
+      slug: "Formen", type: "Trio", medium: "leinwand", size: "30 × 30 cm",
+      title: { de: "Formen", it: "Forme", fr: "Formes", en: "Forms" },
+      pieces: ["Rechteck", "Kreis", "La-Linea"]
     },
     {
-      slug: "Flash",
-      title: "Flash",
-      type: "Trio",
-      medium: "Acryl auf Leinwand",
-      size: "30 × 24 cm",
+      slug: "Flash", type: "Trio", medium: "leinwand", size: "30 × 24 cm",
+      title: { de: "Flash", it: "Flash", fr: "Flash", en: "Flash" },
       pieces: ["Flash-1", "Flash-2", "Flash-3"]
     },
     {
-      slug: "Pastell",
-      title: "Pastell",
-      type: "Trio",
-      medium: "Acryl auf Leinwand",
-      size: "15 × 15 cm",
+      slug: "Pastell", type: "Trio", medium: "leinwand", size: "15 × 15 cm",
+      title: { de: "Pastell", it: "Pastello", fr: "Pastel", en: "Pastel" },
       pieces: ["Pastell-1", "Pastell-2", "Pastell-3"]
+    },
+    {
+      slug: "Fluchtpunkte", type: "Trio", medium: "leinwand", size: "40 × 40 cm",
+      title: { de: "Fluchtpunkte", it: "Punti di Fuga", fr: "Points de Fuite", en: "Vanishing Points" },
+      pieces: ["Perspektive-1", "Perspektive-2", "Perspektive-3"]
+    },
+    {
+      slug: "Florale-Kompositionen", type: "Trio", medium: "karton", size: "",
+      title: { de: "Florale Kompositionen", it: "Composizioni Floreali", fr: "Compositions Florales", en: "Floral Compositions" },
+      pieces: ["Anemone", "Rose", "Krokus"]
+    },
+    {
+      slug: "Chromatische-Trilogie", type: "Trio", medium: "leinwand", size: "",
+      title: { de: "Chromatische Trilogie", it: "Trilogia Cromatica", fr: "Trilogie Chromatique", en: "Chromatic Trilogy" },
+      pieces: ["Le-Bleu", "Le-Noir", "Le-Rouge"]
     }
   ],
 
-  /* All individual pieces, keyed by URL slug. */
+  /* ---------- Pieces (keyed by URL slug) ---------- */
   pieces: {
-    /* --- Welle (Trio) --- */
-    "Gruene-Welle": { title: "Grüne Welle", image: "Grüne Welle", medium: "Acryl auf Leinwand", size: "40 × 40 cm", collection: "Welle" },
-    "Rote-Welle": { title: "Rote Welle", image: "Rote Welle", medium: "Acryl auf Leinwand", size: "40 × 40 cm", collection: "Welle" },
-    "Blaue-Welle": { title: "Blaue Welle", image: "Blaue Welle", medium: "Acryl auf Leinwand", size: "40 × 40 cm", collection: "Welle" },
+    /* Vier Welten (Quartett) */
+    "Himmel": { title: { de: "Himmel", it: "Cielo", fr: "Ciel", en: "Sky" }, image: "Himmel", medium: "leinwand", size: "60 × 60 cm", collection: "Vier-Welten" },
+    "Erde": { title: { de: "Erde", it: "Terra", fr: "Terre", en: "Earth" }, image: "Erde", medium: "leinwand", size: "60 × 60 cm", collection: "Vier-Welten" },
+    "Desert": { title: { de: "Wüste", it: "Deserto", fr: "Désert", en: "Desert" }, image: "Desert", medium: "leinwand", size: "40 × 40 cm", collection: "Vier-Welten" },
+    "Scacco-Matto": { title: { de: "Schachmatt", it: "Scacco Matto", fr: "Échec et mat", en: "Checkmate" }, image: "Scacco Matto", medium: "leinwand", size: "", collection: "Vier-Welten" },
 
-    /* --- Duo --- */
-    "Licht": { title: "Licht", image: "Licht", medium: "Acryl auf Leinwand", size: "40 × 40 cm", collection: "Duo" },
-    "Dunkelheit": { title: "Dunkelheit", image: "Dunkelheit", medium: "Acryl auf Leinwand", size: "40 × 40 cm", collection: "Duo" },
+    /* Welle (Trio) */
+    "Gruene-Welle": { title: { de: "Grüne Welle", it: "Onda Verde", fr: "Vague Verte", en: "Green Wave" }, image: "Grüne Welle", medium: "leinwand", size: "40 × 40 cm", collection: "Welle" },
+    "Rote-Welle": { title: { de: "Rote Welle", it: "Onda Rossa", fr: "Vague Rouge", en: "Red Wave" }, image: "Rote Welle", medium: "leinwand", size: "40 × 40 cm", collection: "Welle" },
+    "Blaue-Welle": { title: { de: "Blaue Welle", it: "Onda Blu", fr: "Vague Bleue", en: "Blue Wave" }, image: "Blaue Welle", medium: "leinwand", size: "40 × 40 cm", collection: "Welle" },
 
-    /* --- Formen (Trio) --- */
-    "Rechteck": { title: "Rechteck", image: "Il Quadrato", medium: "Acryl auf Leinwand", size: "30 × 30 cm", collection: "Formen" },
-    "Quadrat": { title: "Quadrat", image: null, medium: "Acryl auf Leinwand", size: "30 × 30 cm", collection: "Formen" },
-    "Kreis": { title: "Kreis", image: "Il Tondo", medium: "Acryl auf Leinwand", size: "30 × 30 cm", collection: "Formen" },
+    /* Duo */
+    "Licht": { title: { de: "Licht", it: "Luce", fr: "Lumière", en: "Light" }, image: "Licht", medium: "leinwand", size: "40 × 40 cm", collection: "Duo" },
+    "Dunkelheit": { title: { de: "Dunkelheit", it: "Oscurità", fr: "Obscurité", en: "Darkness" }, image: "Dunkelheit", medium: "leinwand", size: "40 × 40 cm", collection: "Duo" },
 
-    /* --- Flash (Trio) --- */
-    "Flash-1": { title: "Flash 1", image: "Flash 1", medium: "Acryl auf Leinwand", size: "30 × 24 cm", collection: "Flash" },
-    "Flash-2": { title: "Flash 2", image: "Flash 2", medium: "Acryl auf Leinwand", size: "30 × 24 cm", collection: "Flash" },
-    "Flash-3": { title: "Flash 3", image: "Flash 3", medium: "Acryl auf Leinwand", size: "30 × 24 cm", collection: "Flash" },
+    /* Formen (Trio) */
+    "Rechteck": { title: { de: "Rechteck", it: "Rettangolo", fr: "Rectangle", en: "Rectangle" }, image: "Il Quadrato", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
+    "Kreis": { title: { de: "Kreis", it: "Cerchio", fr: "Cercle", en: "Circle" }, image: "Il Tondo", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
+    "La-Linea": { title: { de: "Linie", it: "Linea", fr: "Ligne", en: "Line" }, image: "La Linea", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
 
-    /* --- Pastell (Trio) --- */
-    "Pastell-1": { title: "Pastell 1", image: "Pastell 1", medium: "Acryl auf Leinwand", size: "15 × 15 cm", collection: "Pastell" },
-    "Pastell-2": { title: "Pastell 2", image: "Pastell 2", medium: "Acryl auf Leinwand", size: "15 × 15 cm", collection: "Pastell" },
-    "Pastell-3": { title: "Pastell 3", image: "Pastell 3", medium: "Acryl auf Leinwand", size: "15 × 15 cm", collection: "Pastell" },
+    /* Flash (Trio) */
+    "Flash-1": { title: { de: "Flash 1", it: "Flash 1", fr: "Flash 1", en: "Flash 1" }, image: "Flash 1", medium: "leinwand", size: "30 × 24 cm", collection: "Flash" },
+    "Flash-2": { title: { de: "Flash 2", it: "Flash 2", fr: "Flash 2", en: "Flash 2" }, image: "Flash 2", medium: "leinwand", size: "30 × 24 cm", collection: "Flash" },
+    "Flash-3": { title: { de: "Flash 3", it: "Flash 3", fr: "Flash 3", en: "Flash 3" }, image: "Flash 3", medium: "leinwand", size: "30 × 24 cm", collection: "Flash" },
 
-    /* --- Individuals --- */
-    "Himmel": { title: "Himmel", image: "Himmel", medium: "Acryl auf Leinwand", size: "60 × 60 cm", collection: null },
-    "Erde": { title: "Erde", image: "Erde", medium: "Acryl auf Leinwand", size: "60 × 60 cm", collection: null },
-    "Desert": { title: "Desert", image: "Desert", medium: "Acryl auf Leinwand", size: "40 × 40 cm", collection: null },
-    "Perspektive-1": { title: "Perspektive 1", image: "Perspektive 1", medium: "Collage · Acryl auf Leinwand", size: "40 × 40 cm", collection: null },
-    "Perspektive-2": { title: "Perspektive 2", image: "Perspektive 2", medium: "Acryl auf Leinwand", size: "40 × 40 cm", collection: null },
-    "Anemone": { title: "Anemone", image: "Anemone", medium: "Acryl auf Karton", size: "100 × 70 cm", collection: null },
-    "Rose": { title: "Rose", image: "Rose", medium: "Acryl auf Karton", size: "100 × 70 cm", collection: null },
-    "Krokus": { title: "Krokus", image: "Krokus", medium: "Acryl auf Karton", size: "", collection: null },
-    "La-Linea": { title: "La Linea", image: "La Linea", medium: "", size: "", collection: null },
-    "Le-Bleu": { title: "Le Bleu", image: "Le Bleu", medium: "", size: "", collection: null },
-    "Le-Noir": { title: "Le Noir", image: "Le Noir", medium: "", size: "", collection: null },
-    "Le-Rouge": { title: "Le Rouge", image: "Le Rouge", medium: "", size: "", collection: null },
-    "Scacco-Matto": { title: "Scacco Matto", image: "Scacco Matto", medium: "", size: "", collection: null }
+    /* Pastell (Trio) */
+    "Pastell-1": { title: { de: "Pastell 1", it: "Pastello 1", fr: "Pastel 1", en: "Pastel 1" }, image: "Pastell 1", medium: "leinwand", size: "15 × 15 cm", collection: "Pastell" },
+    "Pastell-2": { title: { de: "Pastell 2", it: "Pastello 2", fr: "Pastel 2", en: "Pastel 2" }, image: "Pastell 2", medium: "leinwand", size: "15 × 15 cm", collection: "Pastell" },
+    "Pastell-3": { title: { de: "Pastell 3", it: "Pastello 3", fr: "Pastel 3", en: "Pastel 3" }, image: "Pastell 3", medium: "leinwand", size: "15 × 15 cm", collection: "Pastell" },
+
+    /* Fluchtpunkte (Trio + sold) */
+    "Perspektive-1": { title: { de: "Perspektive 1", it: "Prospettiva 1", fr: "Perspective 1", en: "Perspective 1" }, image: "Perspektive 1", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Fluchtpunkte" },
+    "Perspektive-2": { title: { de: "Perspektive 2", it: "Prospettiva 2", fr: "Perspective 2", en: "Perspective 2" }, image: "Perspektive 2", medium: "leinwand", size: "40 × 40 cm", collection: "Fluchtpunkte" },
+    "Perspektive-3": { title: { de: "Perspektive 3", it: "Prospettiva 3", fr: "Perspective 3", en: "Perspective 3" }, image: "Perspektive 3", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Fluchtpunkte" },
+    "Perspektive-4": { title: { de: "Perspektive 4", it: "Prospettiva 4", fr: "Perspective 4", en: "Perspective 4" }, image: "Perspektive 4", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Fluchtpunkte", sold: true },
+    "Perspektive-5": { title: { de: "Perspektive 5", it: "Prospettiva 5", fr: "Perspective 5", en: "Perspective 5" }, image: "Perspektive 5", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Fluchtpunkte", sold: true },
+
+    /* Florale Kompositionen (Trio) */
+    "Anemone": { title: { de: "Anemone", it: "Anemone", fr: "Anémone", en: "Anemone" }, image: "Anemone", medium: "karton", size: "100 × 70 cm", collection: "Florale-Kompositionen" },
+    "Rose": { title: { de: "Rose", it: "Rosa", fr: "Rose", en: "Rose" }, image: "Rose", medium: "karton", size: "100 × 70 cm", collection: "Florale-Kompositionen" },
+    "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "100 × 70 cm", collection: "Florale-Kompositionen" },
+
+    /* Chromatische Trilogie (Trio) */
+    "Le-Bleu": { title: { de: "Das Blau", it: "Il Blu", fr: "Le Bleu", en: "The Blue" }, image: "Le Bleu", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" },
+    "Le-Noir": { title: { de: "Das Schwarz", it: "Il Nero", fr: "Le Noir", en: "The Black" }, image: "Le Noir", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" },
+    "Le-Rouge": { title: { de: "Das Rot", it: "Il Rosso", fr: "Le Rouge", en: "The Red" }, image: "Le Rouge", medium: "leinwand", size: "", collection: "Chromatische-Trilogie" }
   },
 
-  /* Order of individual works shown on the home page. */
-  individualsOrder: [
-    "Himmel", "Erde", "Desert", "Perspektive-1", "Perspektive-2",
-    "Anemone", "Rose", "Krokus", "La-Linea",
-    "Le-Bleu", "Le-Noir", "Le-Rouge", "Scacco-Matto"
-  ]
+  /* Works shown under "Einzelwerke" (none at the moment — all are grouped). */
+  individualsOrder: []
 };

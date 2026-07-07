@@ -1,69 +1,79 @@
 # Carol Ferrari — Kunstportfolio
 
-A static art portfolio for **Carol Ferrari**, built with plain HTML/CSS/JS (no build
-step). Works are grouped into **collections** (Trios / Duo) and **individual works**,
-and every piece and collection has its own clean URL.
+A static, multilingual art portfolio for **Carol Ferrari**, built with plain
+HTML/CSS/JS (no build step). Works are grouped into **collections** and every piece
+and collection has its own clean URL. Available in **German, Italian, French and
+English** via the language switch (top right).
 
 Live site: `https://carolrefe.github.io/Portfolio/`
 
 ## URLs
 
 - Home: `/Portfolio/`
-- A single work: `/Portfolio/Dunkelheit`, `/Portfolio/Desert`, `/Portfolio/Anemone`, …
-- A collection: `/Portfolio/Welle`, `/Portfolio/Duo`, `/Portfolio/Formen`, `/Portfolio/Flash`, `/Portfolio/Pastell`
+- A single work: `/Portfolio/Dunkelheit`, `/Portfolio/Anemone`, `/Portfolio/Perspektive-4`, …
+- A collection: `/Portfolio/Vier-Welten`, `/Portfolio/Welle`, `/Portfolio/Duo`,
+  `/Portfolio/Formen`, `/Portfolio/Flash`, `/Portfolio/Pastell`,
+  `/Portfolio/Fluchtpunkte`, `/Portfolio/Florale-Kompositionen`,
+  `/Portfolio/Chromatische-Trilogie`
 
-Each URL is a folder containing a small `index.html`, which is what lets the address
-work without a `.html` ending.
-
-## How it's organised
-
-```
-Portfolio/
-├── index.html          # Home (grouped gallery)
-├── styles.css          # Shared styling for every page
-├── data.js             # ← ALL content lives here (titles, medium, size, groups)
-├── app.js              # Renders the home / piece / collection pages
-├── Images/             # The artwork photos
-├── Welle/  Duo/  Formen/  Flash/  Pastell/     # collection pages
-└── Dunkelheit/  Desert/  Anemone/  …            # one folder per artwork
-```
-
-### To edit content
-
-Open **`data.js`** — it's the single source of truth. You can change any title,
-medium, size, or move a piece between collections there, and every page updates
-automatically. No need to touch the individual folders.
-
-- `image: "Rose"` refers to `Images/Rose.<ext>`. The site automatically tries
-  `.jpg`, `.jpeg`, `.JPG`, `.png`, etc., so mixed extensions are fine.
-- `image: null` shows a tasteful "Bild folgt" placeholder (used for `Rechteck`,
-  which has no photo yet).
-
-### Collections
+## Collections
 
 | Collection | Type | Pieces |
 |---|---|---|
-| Welle | Trio | Grüne Welle, Rote Welle, Blaue Welle |
+| Vier Welten | Quartett | Himmel, Erde, Wüste, Schachmatt |
+| Welle | Trio | Grüne / Rote / Blaue Welle |
 | Duo | Duo | Licht, Dunkelheit |
-| Formen | Trio | Rechteck, Quadrat, Kreis |
+| Formen | Trio | Rechteck, Kreis, Linie |
 | Flash | Trio | Flash 1–3 |
 | Pastell | Trio | Pastell 1–3 |
+| Fluchtpunkte | Trio | Perspektive 1–3 (+ 4 & 5, verkauft) |
+| Florale Kompositionen | Trio | Anemone, Rose, Krokus |
+| Chromatische Trilogie | Trio | Le Bleu, Le Noir, Le Rouge |
 
-Individual works: Himmel, Erde, Desert, Perspektive 1 & 2, Anemone, Rose, Krokus,
-La Linea, Le Bleu, Le Noir, Le Rouge, Scacco Matto.
+**Verkauft (Sold):** Perspektive 4 & 5 appear in the "Verkauft" section on the home
+page and are also shown (badged) inside the Fluchtpunkte collection.
+
+## Editing content
+
+Everything lives in **`data.js`** — the single source of truth:
+
+- **Titles** are objects `{ de, it, fr, en }`. Change any language there.
+- **`medium`** is a key (`leinwand`, `karton`, `collageLeinwand`) that translates
+  automatically; add more in the `media` section.
+- **`image`** is the base filename in `Images/` (no extension); the app tries
+  `.jpg`, `.jpeg`, `.png`, … automatically. Use `null` for a "coming soon" placeholder.
+- **`sold: true`** marks a work sold.
+- **UI text** for all four languages lives in the `ui` section.
+
+Each artwork page shows: **Technik · Format · Kollektion · Preis** ("auf Anfrage",
+or "Verkauft" for sold works).
+
+## Structure
+
+```
+Portfolio/
+├── index.html          # Home
+├── styles.css          # Shared styling
+├── data.js             # ← All content + translations
+├── app.js              # Renders pages, language switch, lightbox
+├── Images/             # Artwork photos
+├── Vier-Welten/  Welle/  Duo/  Formen/ …   # collection pages
+└── Dunkelheit/  Anemone/  Perspektive-4/ … # one folder per artwork
+```
 
 ## Local preview
 
-Because the pages load `data.js`/`app.js` with relative paths, just open
-`index.html` in a browser, or run a small server:
-
-```bash
-python -m http.server 8000
-# http://localhost:8000
-```
+Open `index.html`, or run `python -m http.server 8000` and visit
+`http://localhost:8000`.
 
 ## Publish (GitHub Pages)
 
-1. Commit and push all files (including the `Images/` folder).
-2. Repo → **Settings → Pages** → Source: your branch, folder `/ (root)`.
-3. The site appears at `https://carolrefe.github.io/Portfolio/`.
+```bash
+cd C:\Users\olive\Portfolio
+git add -A
+git commit -m "Add collections, sold section, prices and multilingual support"
+git push
+```
+
+Then Settings → Pages → Source: `main` / root. Live at
+`https://carolrefe.github.io/Portfolio/`.
