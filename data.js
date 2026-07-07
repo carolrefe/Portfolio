@@ -198,59 +198,59 @@ exhibitions: [
   /* ---------- Pieces (keyed by URL slug) ---------- */
   pieces: {
     /* Perspektive — slug number = displayed number; image is the original file */
-    "Perspektive-1": { title: { de: "Perspektive 1", it: "Prospettiva 1", fr: "Perspective 1", en: "Perspective 1" }, image: "Perspektive 3", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive", price: "260 CHF" },
-    "Perspektive-2": { title: { de: "Perspektive 2", it: "Prospettiva 2", fr: "Perspective 2", en: "Perspective 2" }, image: "Perspektive 4", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive", sold: true},
-    "Perspektive-3": { title: { de: "Perspektive 3", it: "Prospettiva 3", fr: "Perspective 3", en: "Perspective 3" }, image: "Perspektive 5", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive", sold: true},
-    "Perspektive-4": { title: { de: "Perspektive 4", it: "Prospettiva 4", fr: "Perspective 4", en: "Perspective 4" }, image: "Perspektive 1", medium: "collageLeinwand", size: "40 × 40 cm", collection: "Perspektive" },
-    "Perspektive-5": { title: { de: "Perspektive 5", it: "Prospettiva 5", fr: "Perspective 5", en: "Perspective 5" }, image: "Perspektive 2", medium: "leinwand", size: "40 × 40 cm", collection: "Perspektive" },
+    "Perspektive-1": { title: { de: "Perspektive 1", it: "Prospettiva 1", fr: "Perspective 1", en: "Perspective 1" }, image: "Perspektive 3", medium: "collageLeinwand", size: "3 × 40 × 40 cm", collection: "Perspektive", price: "260 CHF" },
+    "Perspektive-2": { title: { de: "Perspektive 2", it: "Prospettiva 2", fr: "Perspective 2", en: "Perspective 2" }, image: "Perspektive 4", medium: "collageLeinwand", size: "3 × 40 × 40 cm", collection: "Perspektive", sold: true},
+    "Perspektive-3": { title: { de: "Perspektive 3", it: "Prospettiva 3", fr: "Perspective 3", en: "Perspective 3" }, image: "Perspektive 5", medium: "collageLeinwand", size: "3 × 40 × 40 cm", collection: "Perspektive", sold: true},
+    "Perspektive-4": { title: { de: "Perspektive 4", it: "Prospettiva 4", fr: "Perspective 4", en: "Perspective 4" }, image: "Perspektive 1", medium: "collageLeinwand", size: "3 × 40 × 40 cm", collection: "Perspektive" },
+    "Perspektive-5": { title: { de: "Perspektive 5", it: "Prospettiva 5", fr: "Perspective 5", en: "Perspective 5" }, image: "Perspektive 2", medium: "leinwand", size: "3 × 40 × 40 cm", collection: "Perspektive" },
 
     /* Welten (Quartett) */
-    "Himmel": { title: { de: "Himmel", it: "Cielo", fr: "Ciel", en: "Sky" }, image: "Himmel", medium: "leinwand", size: "60 × 60 cm", collection: "Welten" },
-    "Erde": { title: { de: "Erde", it: "Terra", fr: "Terre", en: "Earth" }, image: "Erde", medium: "leinwand", size: "60 × 60 cm", collection: "Welten" },
-    "Desert": { title: { de: "Wüste", it: "Deserto", fr: "Désert", en: "Desert" }, image: "Desert", medium: "leinwand", size: "40 × 40 cm", collection: "Welten" },
-    "Scacco-Matto": { title: { de: "Schachmatt", it: "Scacco Matto", fr: "Échec et mat", en: "Checkmate" }, image: "Scacco Matto", medium: "leinwand", size: "70 × 70 cm", collection: "Welten" },
+    "Himmel": { title: { de: "Himmel", it: "Cielo", fr: "Ciel", en: "Sky" }, image: "Himmel", medium: "leinwand", size: "3 × 60 × 60 cm", collection: "Welten" },
+    "Erde": { title: { de: "Erde", it: "Terra", fr: "Terre", en: "Earth" }, image: "Erde", medium: "leinwand", size: "3 × 60 × 60 cm", collection: "Welten" },
+    "Desert": { title: { de: "Wüste", it: "Deserto", fr: "Désert", en: "Desert" }, image: "Desert", medium: "leinwand", size: "3 × 40 × 40 cm", collection: "Welten" },
+    "Scacco-Matto": { title: { de: "Schachmatt", it: "Scacco Matto", fr: "Échec et mat", en: "Checkmate" }, image: "Scacco Matto", medium: "leinwand", size: "3 ×70 × 70 cm", collection: "Welten" },
 
     /* Welle (Trio) */
-    "Gruene-Welle": { title: { de: "Grüne Welle", it: "Onda Verde", fr: "Vague Verte", en: "Green Wave" }, image: "Grüne Welle", medium: "leinwand", size: "40 × 40 cm", collection: "Welle" },
-    "Rote-Welle": { title: { de: "Rote Welle", it: "Onda Rossa", fr: "Vague Rouge", en: "Red Wave" }, image: "Rote Welle", medium: "leinwand", size: "40 × 40 cm", collection: "Welle" },
-    "Blaue-Welle": { title: { de: "Blaue Welle", it: "Onda Blu", fr: "Vague Bleue", en: "Blue Wave" }, image: "Blaue Welle", medium: "leinwand", size: "40 × 40 cm", collection: "Welle" },
+    "Gruene-Welle": { title: { de: "Grüne Welle", it: "Onda Verde", fr: "Vague Verte", en: "Green Wave" }, image: "Grüne Welle", medium: "leinwand", size: "3 × 40 × 40 cm", collection: "Welle" },
+    "Rote-Welle": { title: { de: "Rote Welle", it: "Onda Rossa", fr: "Vague Rouge", en: "Red Wave" }, image: "Rote Welle", medium: "leinwand", size: "3 × 40 × 40 cm", collection: "Welle" },
+    "Blaue-Welle": { title: { de: "Blaue Welle", it: "Onda Blu", fr: "Vague Bleue", en: "Blue Wave" }, image: "Blaue Welle", medium: "leinwand", size: "3 × 40 × 40 cm", collection: "Welle" },
 
     /* Duo */
-    "Licht": { title: { de: "Licht", it: "Luce", fr: "Lumière", en: "Light" }, image: "Licht", medium: "leinwand", size: "40 × 40 cm", collection: "Duo" },
-    "Dunkelheit": { title: { de: "Dunkelheit", it: "Oscurità", fr: "Obscurité", en: "Darkness" }, image: "Dunkelheit", medium: "leinwand", size: "40 × 40 cm", collection: "Duo" },
+    "Licht": { title: { de: "Licht", it: "Luce", fr: "Lumière", en: "Light" }, image: "Licht", medium: "leinwand", size: "3 × 40 × 40 cm", collection: "Duo" },
+    "Dunkelheit": { title: { de: "Dunkelheit", it: "Oscurità", fr: "Obscurité", en: "Darkness" }, image: "Dunkelheit", medium: "leinwand", size: "3 × 40 × 40 cm", collection: "Duo" },
 
     /* Formen (Trio) */
-    "Rechteck": { title: { de: "Rechteck", it: "Rettangolo", fr: "Rectangle", en: "Rectangle" }, image: "Il Quadrato", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
-    "La-Linea": { title: { de: "Linie", it: "Linea", fr: "Ligne", en: "Line" }, image: "La Linea", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
-    "Kreis": { title: { de: "Kreis", it: "Cerchio", fr: "Cercle", en: "Circle" }, image: "Il Tondo", medium: "leinwand", size: "30 × 30 cm", collection: "Formen" },
+    "Rechteck": { title: { de: "Rechteck", it: "Rettangolo", fr: "Rectangle", en: "Rectangle" }, image: "Il Quadrato", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Formen" },
+    "La-Linea": { title: { de: "Linie", it: "Linea", fr: "Ligne", en: "Line" }, image: "La Linea", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Formen" },
+    "Kreis": { title: { de: "Kreis", it: "Cerchio", fr: "Cercle", en: "Circle" }, image: "Il Tondo", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Formen" },
     
 
     /* Flash (Trio) */
-    "Flash-1": { title: { de: "Flash 1", it: "Flash 1", fr: "Flash 1", en: "Flash 1" }, image: "Flash 1", medium: "leinwand", size: "24 × 30 cm", collection: "Flash" },
-    "Flash-2": { title: { de: "Flash 2", it: "Flash 2", fr: "Flash 2", en: "Flash 2" }, image: "Flash 2", medium: "leinwand", size: "24 × 30 cm", collection: "Flash" },
-    "Flash-3": { title: { de: "Flash 3", it: "Flash 3", fr: "Flash 3", en: "Flash 3" }, image: "Flash 3", medium: "leinwand", size: "24 × 30 cm", collection: "Flash" },
+    "Flash-1": { title: { de: "Flash 1", it: "Flash 1", fr: "Flash 1", en: "Flash 1" }, image: "Flash 1", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Flash" },
+    "Flash-2": { title: { de: "Flash 2", it: "Flash 2", fr: "Flash 2", en: "Flash 2" }, image: "Flash 2", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Flash" },
+    "Flash-3": { title: { de: "Flash 3", it: "Flash 3", fr: "Flash 3", en: "Flash 3" }, image: "Flash 3", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Flash" },
 
     /* Pastell (Trio) */
-    "Pastell-1": { title: { de: "Pastell 1", it: "Pastello 1", fr: "Pastel 1", en: "Pastel 1" }, image: "Pastell 1", medium: "leinwand", size: "15 × 15 cm", collection: "Pastell" },
-    "Pastell-2": { title: { de: "Pastell 2", it: "Pastello 2", fr: "Pastel 2", en: "Pastel 2" }, image: "Pastell 2", medium: "leinwand", size: "15 × 15 cm", collection: "Pastell" },
-    "Pastell-3": { title: { de: "Pastell 3", it: "Pastello 3", fr: "Pastel 3", en: "Pastel 3" }, image: "Pastell 3", medium: "leinwand", size: "15 × 15 cm", collection: "Pastell" },
+    "Pastell-1": { title: { de: "Pastell 1", it: "Pastello 1", fr: "Pastel 1", en: "Pastel 1" }, image: "Pastell 1", medium: "leinwand", size: "3 × 15 × 15 cm", collection: "Pastell" },
+    "Pastell-2": { title: { de: "Pastell 2", it: "Pastello 2", fr: "Pastel 2", en: "Pastel 2" }, image: "Pastell 2", medium: "leinwand", size: "3 × 15 × 15 cm", collection: "Pastell" },
+    "Pastell-3": { title: { de: "Pastell 3", it: "Pastello 3", fr: "Pastel 3", en: "Pastel 3" }, image: "Pastell 3", medium: "leinwand", size: "3 × 15 × 15 cm", collection: "Pastell" },
 
     /* Blumen (Trio) */
-    "Anemone": { title: { de: "Anemone", it: "Anemone", fr: "Anémone", en: "Anemone" }, image: "Anemone", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
-    "Rose": { title: { de: "Rose", it: "Rosa", fr: "Rose", en: "Rose" }, image: "Rose", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
-    "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
-    "Krokus-2": { title: { de: "Krokus 2", it: "Croco 2", fr: "Crocus 2", en: "Crocus 2" }, image: "Krokus 2", medium: "karton", size: "30 × 30 cm", collection: "Blumen" },
-    "Rose-2": { title: { de: "Rose 2", it: "Rosa 2", fr: "Rose 2", en: "Rose 2" }, image: "Rose 2", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
-    "Rose-3": { title: { de: "Rose 3", it: "Rosa 3", fr: "Rose 3", en: "Rose 3" }, image: "Rose 3", medium: "karton", size: "20 × 20 cm", collection: "Blumen" },
+    "Anemone": { title: { de: "Anemone", it: "Anemone", fr: "Anémone", en: "Anemone" }, image: "Anemone", medium: "karton", size: "1 × 70 × 100 cm", collection: "Blumen" },
+    "Rose": { title: { de: "Rose", it: "Rosa", fr: "Rose", en: "Rose" }, image: "Rose", medium: "karton", size: "1 × 70 × 100 cm", collection: "Blumen" },
+    "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "1 × 70 × 100 cm", collection: "Blumen" },
+    "Krokus-2": { title: { de: "Krokus 2", it: "Croco 2", fr: "Crocus 2", en: "Crocus 2" }, image: "Krokus 2", medium: "karton", size: "3 × 30 × 30 cm", collection: "Blumen" },
+    "Rose-2": { title: { de: "Rose 2", it: "Rosa 2", fr: "Rose 2", en: "Rose 2" }, image: "Rose 2", medium: "karton", size: "3 × 20 × 20 cm", collection: "Blumen" },
+    "Rose-3": { title: { de: "Rose 3", it: "Rosa 3", fr: "Rose 3", en: "Rose 3" }, image: "Rose 3", medium: "karton", size: "3 × 20 × 20 cm", collection: "Blumen" },
 
     /* Menschen (Duo) */
-    "Zusammen": { title: { de: "Zusammen", it: "Insieme", fr: "Ensemble", en: "Together" }, image: "Zusammen", medium: "collageLeinwand", size: "60 × 50 cm", collection: "Menschen" },
-    "Allein": { title: { de: "Allein", it: "Solo", fr: "Seul", en: "Alone" }, image: "Alleine", medium: "collageLeinwand", size: "50 × 50 cm", collection: "Menschen" },
+    "Zusammen": { title: { de: "Zusammen", it: "Insieme", fr: "Ensemble", en: "Together" }, image: "Zusammen", medium: "collageLeinwand", size: "3 × 60 × 50 cm", collection: "Menschen" },
+    "Allein": { title: { de: "Allein", it: "Solo", fr: "Seul", en: "Alone" }, image: "Alleine", medium: "collageLeinwand", size: "3 × 50 × 50 cm", collection: "Menschen" },
 
     /* Chromatische Trilogie (Trio) */
-    "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "24 × 30 cm", collection: "Chromatische-Trilogie" },
-    "Le-Noir": { title: { de: "Schwarz", it: "Nero", fr: "Noir", en: "Black" }, image: "Le Noir", medium: "leinwand", size: "24 × 30 cm", collection: "Chromatische-Trilogie" },
-    "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "24 × 30 cm", collection: "Chromatische-Trilogie" }
+    "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Chromatische-Trilogie" },
+    "Le-Noir": { title: { de: "Schwarz", it: "Nero", fr: "Noir", en: "Black" }, image: "Le Noir", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Chromatische-Trilogie" },
+    "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Chromatische-Trilogie" }
   },
 
   /* Works shown under "Einzelwerke" (none — all grouped). */
