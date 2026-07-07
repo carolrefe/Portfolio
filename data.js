@@ -149,7 +149,7 @@ window.PORTFOLIO = {
     {
       slug: "Blumen", type: "", medium: "karton", size: "",
       title: { de: "Blumen", it: "Fiori", fr: "Fleurs", en: "Flowers" },
-      pieces: ["Anemone", "Rose", "Krokus", "Krokus-2", "Rose-3", "Rose-2"]
+      pieces: ["Anemone", "Rose", "Krokus", "Krokus-2", "Blume-2", "Blume-3"]
     },
     {
       slug: "Chromatische-Trilogie", type: "Trio",

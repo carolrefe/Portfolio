@@ -66,6 +66,7 @@
 
     function card(slug) {
         var p = P.pieces[slug];
+        if (!p) { console.warn("Unknown piece slug: " + slug); return el("span", { style: "display:none" }); }
         var a = el("a", { class: "card reveal", href: pieceUrl(slug) });
         var frame = el("div", { class: "frame" });
         frame.appendChild(artImage(p.image, pieceTitle(slug)));
