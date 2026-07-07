@@ -8,7 +8,7 @@ English** via the language switch (top right).
 Live site: `https://carolrefe.github.io/Portfolio/`
 
 ### Mobile View (QR Code)
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://carolrefe.github.io/Portfolio/" alt="QR Code Live Site" width="150" />
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://carolrefe.github.io/Portfolio/Perspektive-1" alt="QR Code Live Site" width="150" />
 
 ## URLs
 
