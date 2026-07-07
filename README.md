@@ -7,6 +7,9 @@ English** via the language switch (top right).
 
 Live site: `https://carolrefe.github.io/Portfolio/`
 
+### Mobile View (QR Code)
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://carolrefe.github.io/Portfolio/" alt="QR Code Live Site" width="150" />
+
 ## URLs
 
 - Home: `/Portfolio/`
@@ -48,31 +51,3 @@ Each artwork page shows: **Technik · Format · Kollektion · Preis** ("auf Anfr
 or "Verkauft" for sold works).
 
 ## Structure
-
-```
-Portfolio/
-├── index.html          # Home
-├── styles.css          # Shared styling
-├── data.js             # ← All content + translations
-├── app.js              # Renders pages, language switch, lightbox
-├── Images/             # Artwork photos
-├── Vier-Welten/  Welle/  Duo/  Formen/ …   # collection pages
-└── Dunkelheit/  Anemone/  Perspektive-4/ … # one folder per artwork
-```
-
-## Local preview
-
-Open `index.html`, or run `python -m http.server 8000` and visit
-`http://localhost:8000`.
-
-## Publish (GitHub Pages)
-
-```bash
-cd C:\Users\olive\Portfolio
-git add -A
-git commit -m "Add collections, sold section, prices and multilingual support"
-git push
-```
-
-Then Settings → Pages → Source: `main` / root. Live at
-`https://carolrefe.github.io/Portfolio/`.
