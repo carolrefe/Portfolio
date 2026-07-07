@@ -185,9 +185,9 @@ window.PORTFOLIO = {
     
 
     /* Flash (Trio) */
-    "Flash-1": { title: { de: "Flash 1", it: "Flash 1", fr: "Flash 1", en: "Flash 1" }, image: "Flash 1", medium: "leinwand", size: "30 × 24 cm", collection: "Flash" },
-    "Flash-2": { title: { de: "Flash 2", it: "Flash 2", fr: "Flash 2", en: "Flash 2" }, image: "Flash 2", medium: "leinwand", size: "30 × 24 cm", collection: "Flash" },
-    "Flash-3": { title: { de: "Flash 3", it: "Flash 3", fr: "Flash 3", en: "Flash 3" }, image: "Flash 3", medium: "leinwand", size: "30 × 24 cm", collection: "Flash" },
+    "Flash-1": { title: { de: "Flash 1", it: "Flash 1", fr: "Flash 1", en: "Flash 1" }, image: "Flash 1", medium: "leinwand", size: "24 × 30 cm", collection: "Flash" },
+    "Flash-2": { title: { de: "Flash 2", it: "Flash 2", fr: "Flash 2", en: "Flash 2" }, image: "Flash 2", medium: "leinwand", size: "24 × 30 cm", collection: "Flash" },
+    "Flash-3": { title: { de: "Flash 3", it: "Flash 3", fr: "Flash 3", en: "Flash 3" }, image: "Flash 3", medium: "leinwand", size: "24 × 30 cm", collection: "Flash" },
 
     /* Pastell (Trio) */
     "Pastell-1": { title: { de: "Pastell 1", it: "Pastello 1", fr: "Pastel 1", en: "Pastel 1" }, image: "Pastell 1", medium: "leinwand", size: "15 × 15 cm", collection: "Pastell" },
@@ -200,9 +200,9 @@ window.PORTFOLIO = {
     "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "100 × 70 cm", collection: "Blumen" },
 
     /* Chromatische Trilogie (Trio) */
-    "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "30 × 24 cm", collection: "Chromatische-Trilogie" },
-    "Le-Noir": { title: { de: "Schwarz", it: "Nero", fr: "Noir", en: "Black" }, image: "Le Noir", medium: "leinwand", size: "30 × 24 cm", collection: "Chromatische-Trilogie" },
-    "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "30 × 24 cm", collection: "Chromatische-Trilogie" }
+    "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "24 × 30 cm", collection: "Chromatische-Trilogie" },
+    "Le-Noir": { title: { de: "Schwarz", it: "Nero", fr: "Noir", en: "Black" }, image: "Le Noir", medium: "leinwand", size: "24 × 30 cm", collection: "Chromatische-Trilogie" },
+    "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "24 × 30 cm", collection: "Chromatische-Trilogie" }
   },
 
   /* Works shown under "Einzelwerke" (none — all grouped). */
