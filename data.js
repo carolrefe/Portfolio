@@ -195,9 +195,9 @@ window.PORTFOLIO = {
     "Pastell-3": { title: { de: "Pastell 3", it: "Pastello 3", fr: "Pastel 3", en: "Pastel 3" }, image: "Pastell 3", medium: "leinwand", size: "15 × 15 cm", collection: "Pastell" },
 
     /* Blumen (Trio) */
-    "Anemone": { title: { de: "Anemone", it: "Anemone", fr: "Anémone", en: "Anemone" }, image: "Anemone", medium: "karton", size: "100 × 70 cm", collection: "Blumen" },
-    "Rose": { title: { de: "Rose", it: "Rosa", fr: "Rose", en: "Rose" }, image: "Rose", medium: "karton", size: "100 × 70 cm", collection: "Blumen" },
-    "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "100 × 70 cm", collection: "Blumen" },
+    "Anemone": { title: { de: "Anemone", it: "Anemone", fr: "Anémone", en: "Anemone" }, image: "Anemone", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
+    "Rose": { title: { de: "Rose", it: "Rosa", fr: "Rose", en: "Rose" }, image: "Rose", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
+    "Krokus": { title: { de: "Krokus", it: "Croco", fr: "Crocus", en: "Crocus" }, image: "Krokus", medium: "karton", size: "70 × 100 cm", collection: "Blumen" },
 
     /* Chromatische Trilogie (Trio) */
     "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "24 × 30 cm", collection: "Chromatische-Trilogie" },
