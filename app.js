@@ -76,8 +76,6 @@
         var c1 = el("div", { class: "col" });
         c1.appendChild(el("h4", null, "Kontakt"));
         c1.appendChild(el("p", null, P.contact.name));
-        c1.appendChild(el("p", null, P.contact.address));
-        c1.appendChild(el("a", { href: "tel:" + P.contact.phone.replace(/\s/g, "") }, P.contact.phone));
         c1.appendChild(el("a", { href: "mailto:" + P.contact.email }, P.contact.email));
 
         var c2 = el("div", { class: "col" });

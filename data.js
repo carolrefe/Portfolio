@@ -78,8 +78,8 @@ window.PORTFOLIO = {
     "Dunkelheit": { title: "Dunkelheit", image: "Dunkelheit", medium: "Acryl auf Leinwand", size: "40 × 40 cm", collection: "Duo" },
 
     /* --- Formen (Trio) --- */
-    "Rechteck": { title: "Rechteck", image: null, medium: "Acryl auf Leinwand", size: "30 × 30 cm", collection: "Formen" },
-    "Quadrat": { title: "Quadrat", image: "Il Quadrato", medium: "Acryl auf Leinwand", size: "30 × 30 cm", collection: "Formen" },
+    "Rechteck": { title: "Rechteck", image: "Il Quadrato", medium: "Acryl auf Leinwand", size: "30 × 30 cm", collection: "Formen" },
+    "Quadrat": { title: "Quadrat", image: null, medium: "Acryl auf Leinwand", size: "30 × 30 cm", collection: "Formen" },
     "Kreis": { title: "Kreis", image: "Il Tondo", medium: "Acryl auf Leinwand", size: "30 × 30 cm", collection: "Formen" },
 
     /* --- Flash (Trio) --- */
