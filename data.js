@@ -33,9 +33,9 @@ window.PORTFOLIO = {
   },
 
   exhibitions: [
-    { year: "November 2024", title: "Thomson Gallery", place: "" },
+    { year: "November 2024", title: "Thomson Gallery", place: "Zug" },
     { year: "October 2024", title: "Artboxy", place: "Paris" },
-    { year: "August 2024", title: "Swissartexpo Artboxy Project", place: "8001 Zurich" },
+    { year: "August 2024", title: "Swissartexpo Artboxy Project", place: "Zurich" },
     { year: "2019", title: "Perspektive", place: "Galerie Glashütte, Zumikon" },
     { year: "2018", title: "Équilibre", place: "Galerie Glashütte, Zumikon" },
     { year: "2017", title: "Anflug von Süden", place: "Galerie Glashütte, Zumikon" },
