@@ -32,16 +32,48 @@ window.PORTFOLIO = {
     email: "carol.refe@bluewin.ch"
   },
 
-  exhibitions: [
-    { year: "November 2024", title: "Thomson Gallery", place: "Zug" },
-    { year: "October 2024", title: "Artboxy", place: "Paris" },
-    { year: "August 2024", title: "Swissartexpo Artboxy Project", place: "Zurich" },
-    { year: "2019", title: "Perspektive", place: "Galerie Glashütte, Zumikon" },
-    { year: "2018", title: "Équilibre", place: "Galerie Glashütte, Zumikon" },
-    { year: "2017", title: "Anflug von Süden", place: "Galerie Glashütte, Zumikon" },
-    { year: "2016", title: "Le Passage dans l'Art", place: "Galerie Glashütte, Zumikon" },
-    { year: "2014", title: "Klang-Art", place: "Galerie Glashütte, Zumikon" }
-  ],
+exhibitions: [
+  {
+    year: "November 2024",
+    title: { de: "Thomson Gallery", it: "Thomson Gallery", fr: "Thomson Gallery", en: "Thomson Gallery" },
+    place: { de: "Zug", it: "Zugo", fr: "Zoug", en: "Zug" }
+  },
+  {
+    year: "October 2024",
+    title: { de: "Artboxy", it: "Artboxy", fr: "Artboxy", en: "Artboxy" },
+    place: { de: "Paris", it: "Parigi", fr: "Paris", en: "Paris" }
+  },
+  {
+    year: "August 2024",
+    title: { de: "Swissartexpo Artboxy Project", it: "Swissartexpo Artboxy Project", fr: "Swissartexpo Artboxy Project", en: "Swissartexpo Artboxy Project" },
+    place: { de: "Zürich", it: "Zurigo", fr: "Zurich", en: "Zurich" }
+  },
+  {
+    year: "2019",
+    title: { de: "Perspektive", it: "Prospettiva", fr: "Perspective", en: "Perspective" },
+    place: { de: "Galerie Glashütte, Zumikon", it: "Galerie Glashütte, Zumikon", fr: "Galerie Glashütte, Zumikon", en: "Galerie Glashütte, Zumikon" }
+  },
+  {
+    year: "2018",
+    title: { de: "Équilibre", it: "Equilibrio", fr: "Équilibre", en: "Balance" },
+    place: { de: "Galerie Glashütte, Zumikon", it: "Galerie Glashütte, Zumikon", fr: "Galerie Glashütte, Zumikon", en: "Galerie Glashütte, Zumikon" }
+  },
+  {
+    year: "2017",
+    title: { de: "Anflug von Süden", it: "Avvicinamento da sud", fr: "Approche du sud", en: "Approach from the South" },
+    place: { de: "Galerie Glashütte, Zumikon", it: "Galerie Glashütte, Zumikon", fr: "Galerie Glashütte, Zumikon", en: "Galerie Glashütte, Zumikon" }
+  },
+  {
+    year: "2016",
+    title: { de: "Le Passage dans l'Art", it: "Le Passage dans l'Art", fr: "Le Passage dans l'Art", en: "The Passage into Art" },
+    place: { de: "Galerie Glashütte, Zumikon", it: "Galerie Glashütte, Zumikon", fr: "Galerie Glashütte, Zumikon", en: "Galerie Glashütte, Zumikon" }
+  },
+  {
+    year: "2014",
+    title: { de: "Klang-Art", it: "Arte sonora", fr: "Art sonore", en: "Sound Art" },
+    place: { de: "Galerie Glashütte, Zumikon", it: "Galerie Glashütte, Zumikon", fr: "Galerie Glashütte, Zumikon", en: "Galerie Glashütte, Zumikon" }
+  }
+],
 
   /* ---------- UI strings ---------- */
   ui: {
