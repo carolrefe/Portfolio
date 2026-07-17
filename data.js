@@ -200,12 +200,12 @@ exhibitions: [
       slug: "Chromatische-Trilogie", type: "Trio",
       title: { de: "Chromatische Trilogie", it: "Trilogia Cromatica", fr: "Trilogie Chromatique", en: "Chromatic Trilogy" },
       pieces: ["Le-Bleu", "Le-Noir", "Le-Rouge"]
-    }
+    },
 
     {
       slug: "Farben", type: "Trio",
       title: { "de": "Farben", "it": "Colori", "fr": "Couleurs", "en": "Colors" },
-      pieces: ["Gelb", "Orange", "Grün"]
+      pieces: ["Gelb", "Orange", "Gruen"]
     }
   ],
   
@@ -265,12 +265,12 @@ exhibitions: [
     /* Chromatische Trilogie (Trio) */
     "Le-Bleu": { title: { de: "Blau", it: "Blu", fr: "Bleu", en: "Blue" }, image: "Le Bleu", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Chromatische-Trilogie" },
     "Le-Noir": { title: { de: "Schwarz", it: "Nero", fr: "Noir", en: "Black" }, image: "Le Noir", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Chromatische-Trilogie" },
-    "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Chromatische-Trilogie" }
+    "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Chromatische-Trilogie" },
 
     /* Farben (Trio) */
-    "Gelb": { "title": { "de": "Gelb", "it": "Giallo", "fr": "Jaune", "en": "Yellow" }, image: "Le Jaune", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben" },
-    "Orange": { "title": { "de": "Orange", "it": "Arancione", "fr": "Orange", "en": "Orange" }, image: "L'Orange", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben" },
-    "Grün": { "title": { "de": "Grün", "it": "Verde", "fr": "Vert", "en": "Green" }, image: "Le Vert", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben" }
+    "Gelb": { title: { de: "Gelb", it: "Giallo", fr: "Jaune", en: "Yellow" }, image: "Gelb", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben" },
+    "Orange": { title: { de: "Orange", it: "Arancione", fr: "Orange", en: "Orange" }, image: "Orange", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben" },
+    "Gruen": { title: { de: "Grün", it: "Verde", fr: "Vert", en: "Green" }, image: "Grün", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben" }
   },
 
   /* Works shown under "Einzelwerke" (none — all grouped). */
