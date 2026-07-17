@@ -187,7 +187,7 @@ exhibitions: [
       pieces: ["Pastell-1", "Pastell-2", "Pastell-3"]
     },
     {
-      slug: "Blumen", type: "", medium: "karton", size: "",
+      slug: "Blumen", type: "Quintet",
       title: { de: "Blumen", it: "Fiori", fr: "Fleurs", en: "Flowers" },
       pieces: ["Anemone", "Rose", "Krokus", "Krokus-2", "Rose-2", "Rose-3"]
     },
