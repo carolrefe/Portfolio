@@ -268,9 +268,9 @@ exhibitions: [
     "Le-Rouge": { title: { de: "Rot", it: "Rosso", fr: "Rouge", en: "Red" }, image: "Le Rouge", medium: "leinwand", size: "3 × 24 × 30 cm", collection: "Chromatische-Trilogie" },
 
     /* Farben (Trio) */
-    "Gelb": { title: { de: "Gelb", it: "Giallo", fr: "Jaune", en: "Yellow" }, image: "Gelb", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben" },
-    "Orange": { title: { de: "Orange", it: "Arancione", fr: "Orange", en: "Orange" }, image: "Orange", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben" },
-    "Gruen": { title: { de: "Grün", it: "Verde", fr: "Vert", en: "Green" }, image: "Grün", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben" }
+    "Gelb": { title: { de: "Gelb", it: "Giallo", fr: "Jaune", en: "Yellow" }, image: "Gelb", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben", sold: true },
+    "Orange": { title: { de: "Orange", it: "Arancione", fr: "Orange", en: "Orange" }, image: "Orange", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben", sold: true },
+    "Gruen": { title: { de: "Grün", it: "Verde", fr: "Vert", en: "Green" }, image: "Grün", medium: "leinwand", size: "3 × 30 × 30 cm", collection: "Farben", sold: true}
   },
 
   /* Works shown under "Einzelwerke" (none — all grouped). */
